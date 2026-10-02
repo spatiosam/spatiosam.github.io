@@ -1,18 +1,257 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Research by Sam Chambers across biometeorology, border geographies, landscape ecology, and spatial analytics."><title>Research — Sam Chambers</title><style>
-:root{--paper:#f2efe6;--ink:#16211c;--forest:#263b32;--sage:#7e8f80;--rust:#a65e43;--line:#c9c5b9;--white:#fbfaf6;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}a{color:inherit}a:hover{color:var(--rust)}
-.site-header{position:sticky;top:0;z-index:30;background:rgba(242,239,230,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{max-width:var(--max);margin:auto;min-height:76px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;font-weight:800;letter-spacing:.02em}.brand span{color:var(--rust)}.nav-links{display:flex;gap:25px;flex-wrap:wrap}.nav-links a{text-decoration:none;font-size:.94rem}.nav-links a[aria-current=page]{font-weight:800;border-bottom:2px solid var(--rust)}
-.hero{position:relative;overflow:hidden;background:var(--forest);color:var(--white);min-height:650px}.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.16);border-radius:50%;width:520px;height:520px;right:-120px;top:20px;box-shadow:0 0 0 70px rgba(255,255,255,.04),0 0 0 140px rgba(255,255,255,.03)}.hero:after{width:280px;height:280px;right:160px;top:300px;box-shadow:0 0 0 45px rgba(255,255,255,.035),0 0 0 90px rgba(255,255,255,.025)}
-.hero-inner{position:relative;z-index:2;max-width:var(--max);margin:auto;padding:95px 28px 70px;display:grid;grid-template-columns:1.55fr .75fr;gap:70px;align-items:end}.kicker{text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800;color:#d6dfd9}.hero h1{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:clamp(4rem,9vw,8rem);line-height:.87;letter-spacing:-.055em;margin:.3rem 0 1.4rem;max-width:800px}.hero h1 em{font-style:normal;color:#d7a38e}.hero-deck{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.35rem,2.4vw,2rem);line-height:1.25;max-width:760px;color:#f0eee7}.hero-side{border-left:1px solid rgba(255,255,255,.28);padding-left:28px}.hero-side p{margin:.35rem 0}.hero-side .label{font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:#c7d3cc;font-weight:800;margin-top:1.2rem}.cta{display:inline-block;margin-top:28px;text-decoration:none;border:1px solid #e5e1d7;padding:12px 17px;font-weight:700;background:rgba(255,255,255,.04)}
-.section{max-width:var(--max);margin:auto;padding:86px 28px}.section-head{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;margin-bottom:42px;align-items:end}.eyebrow{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--rust)}h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:clamp(2.4rem,4.5vw,4.5rem);line-height:.98;letter-spacing:-.035em;margin:.45rem 0}.intro{font-size:1.13rem;max-width:650px;color:#435048}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--white);border:1px solid var(--line);min-height:310px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s ease,box-shadow .2s ease}.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(22,33,28,.09)}.card .num{font-family:Georgia,serif;font-size:2rem;color:var(--sage)}.card h3{font-family:Georgia,serif;font-size:2rem;line-height:1.05;font-weight:500;margin:1rem 0}.card p{color:#4e5b53}.arrow{text-decoration:none;font-weight:800}.band{background:#d9ddd2;border-top:1px solid #bdc3b8;border-bottom:1px solid #bdc3b8}.band .section{padding-top:64px;padding-bottom:64px}.project-list{border-top:1px solid #9fa99f}.project{display:grid;grid-template-columns:80px 1fr 80px;gap:20px;padding:27px 0;border-bottom:1px solid #9fa99f;align-items:center}.project h3{font-family:Georgia,serif;font-weight:500;font-size:1.65rem;margin:0 0 .4rem}.project p{margin:0;color:#435048}.project .index{font-weight:800;color:var(--rust)}
-.pub-list{border-top:2px solid var(--ink)}.pub{display:grid;grid-template-columns:90px 1fr auto;gap:22px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}.pub-year{font-weight:800;color:var(--rust)}.pub-title{font-family:Georgia,serif;font-size:1.28rem;line-height:1.25}.pub-meta{margin-top:.35rem;color:#5b665f;font-size:.92rem}.pub a{text-decoration:none;font-weight:800;white-space:nowrap}.split{display:grid;grid-template-columns:1fr 1fr;gap:60px}.bigquote{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3.6rem);line-height:1.06;margin:0}.text-link{font-weight:800;text-decoration:none;border-bottom:1px solid currentColor}
-.page-hero{background:var(--forest);color:var(--white);border-bottom:12px solid var(--rust)}.page-hero .section{padding-top:74px;padding-bottom:70px}.page-hero h1{font-family:Georgia,serif;font-size:clamp(4rem,8vw,7.4rem);line-height:.9;font-weight:500;letter-spacing:-.05em;margin:.4rem 0}.page-hero p{font-family:Georgia,serif;font-size:1.35rem;max-width:760px;color:#e7e9e4}
-.theme{display:grid;grid-template-columns:130px 1.1fr .9fr;gap:32px;padding:44px 0;border-top:1px solid var(--line)}.theme:last-child{border-bottom:1px solid var(--line)}.theme-no{font-family:Georgia,serif;font-size:3rem;color:var(--sage)}.theme h2{font-size:2.6rem}.tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.tag{border:1px solid #aaa99f;border-radius:99px;padding:5px 10px;font-size:.82rem;background:rgba(255,255,255,.28)}
-.timeline{border-top:1px solid var(--line)}.timeline-item{display:grid;grid-template-columns:1fr 1.6fr;gap:30px;padding:24px 0;border-bottom:1px solid var(--line)}.timeline-item h3{font-family:Georgia,serif;font-size:1.35rem;font-weight:500;margin:0}.meta{font-size:.85rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--rust)}
-.footer{background:#111914;color:#eae8e1;margin-top:60px}.footer-inner{max-width:var(--max);margin:auto;padding:48px 28px 55px;display:grid;grid-template-columns:1fr auto;gap:30px}.footer .name{font-family:Georgia,serif;font-size:2rem}.footer-links{display:flex;gap:20px;align-items:start;flex-wrap:wrap}.footer a{text-decoration:none;color:#eae8e1}.footer small{color:#aeb9b1}
-@media(max-width:820px){.nav{align-items:flex-start;padding-top:18px;padding-bottom:18px}.nav-links{justify-content:flex-end}.hero-inner,.section-head,.split{grid-template-columns:1fr}.hero-inner{padding-top:72px;gap:35px}.hero-side{border-left:0;border-top:1px solid rgba(255,255,255,.28);padding:22px 0 0}.cards{grid-template-columns:1fr}.project{grid-template-columns:50px 1fr}.project>div:last-child{display:none}.pub{grid-template-columns:65px 1fr}.pub>a{grid-column:2}.theme{grid-template-columns:70px 1fr}.theme>div:last-child{grid-column:2}.timeline-item{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}.hero{min-height:auto}}
-@media(max-width:560px){.nav{display:block}.brand{display:block;margin-bottom:12px}.nav-links{gap:14px}.nav-links a{font-size:.85rem}.section{padding:62px 20px}.hero-inner{padding-left:20px;padding-right:20px}.hero h1{font-size:4rem}.page-hero .section{padding-top:55px}.page-hero h1{font-size:4rem}.cards .card{min-height:250px}.theme{grid-template-columns:1fr}.theme>div:last-child{grid-column:auto}.theme-no{font-size:2rem}.pub{grid-template-columns:1fr;gap:7px}.pub>a{grid-column:auto}.footer-inner{padding-left:20px;padding-right:20px}}
-</style></head><body><header class="site-header"><nav class="nav"><a class="brand" href="index.html">Spatio<span>Sam</span> / Sam Chambers</a><div class="nav-links"><a href="research.html" aria-current="page">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="about.html">About</a></div></nav></header>
-<main><section class="page-hero"><div class="section"><div class="eyebrow" style="color:#d7a38e">Research</div><h1>Movement.<br>Exposure.<br>Landscape.</h1><p>Across human biometeorology, border studies, and landscape ecology, I examine how environmental conditions and infrastructure alter exposure, movement, accessibility, and survival.</p></div></section><section class="section"><article class="theme" id="climate"><div class="theme-no">01</div><div><div class="eyebrow">Biometeorology & Climate</div><h2>How weather becomes physiological consequence.</h2><div class="tagrow"><span class="tag">Extreme heat</span><span class="tag">Thermal physiology</span><span class="tag">Climate & health</span><span class="tag">Human exposure</span></div></div><div><p>I model how temperature, humidity, radiation, wind, terrain, physical activity, and exposure duration interact to produce thermal strain. This work connects meteorological data to human heat-balance and physiological models across heterogeneous landscapes.</p></div></article><article class="theme" id="borders"><div class="theme-no">02</div><div><div class="eyebrow">Borders, Mobility & Environment</div><h2>Environmental exposure within enforcement landscapes.</h2><div class="tagrow"><span class="tag">Irregular migration</span><span class="tag">Surveillance</span><span class="tag">Mortality & disappearance</span><span class="tag">Counter-forensics</span></div></div><div><p>I use spatial analysis, environmental modeling, and counter-forensic methods to investigate how border enforcement, surveillance, and terrain shape movement, exposure, mortality, and disappearance.</p></div></article><article class="theme" id="landscape"><div class="theme-no">03</div><div><div class="eyebrow">Landscape & Spatial Analytics</div><h2>Movement through changing and fragmented terrain.</h2><div class="tagrow"><span class="tag">Movement ecology</span><span class="tag">Habitat connectivity</span><span class="tag">Remote sensing</span><span class="tag">Spatial modeling</span></div></div><div><p>I examine how terrain, infrastructure, land-use change, and energy development influence wildlife movement, energetic costs, and connectivity, while developing spatial methods that transfer across human and ecological systems.</p></div></article></section></main><footer class="footer"><div class="footer-inner"><div><div class="name">Sam Chambers, Ph.D.</div><small>Environmental Geographer & Biometeorologist · SpatioSam.com</small></div><div class="footer-links"><a href="mailto:samcham@tutamail.com">Email</a><a href="research.html">Research</a><a href="publications.html">Publications</a></div></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Research by Sam Chambers on environmental exposure, mobility, infrastructure, biometeorology, border geographies, landscape ecology, and spatial analytics." name="description"/>
+<title>Research — Sam Chambers / SpatioSam</title>
+<style>
+:root{
+  --bg:#16100e;
+  --bg2:#1d1411;
+  --panel:#241713;
+  --panel2:#2d1c16;
+  --text:#f2e8df;
+  --muted:#c2aca0;
+  --faint:#8a6b5d;
+  --line:#4a2c23;
+  --rust:#b85f38;
+  --sand:#d79a67;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.62}
+a{color:inherit}
+a:hover{color:var(--sand)}
+::selection{background:var(--rust);color:#fff}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(22,16,14,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:var(--max);margin:auto;min-height:72px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{text-decoration:none;font-weight:800;letter-spacing:.025em}.brand span{color:var(--rust)}
+.nav-links{display:flex;gap:24px;flex-wrap:wrap}.nav-links a{text-decoration:none;font-size:.9rem;color:#e3d6cc}.nav-links a:hover{color:var(--sand)}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background-image:linear-gradient(90deg,rgba(16,11,9,.90) 0%,rgba(16,11,9,.76) 48%,rgba(16,11,9,.48) 100%),url('hero-terrain.png');background-size:cover;background-position:center}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--rust),transparent)}
+.hero-inner{position:relative;z-index:2;max-width:var(--max);margin:auto;padding:104px 28px 94px}
+.eyebrow{font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:#f0d9c9;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(3.8rem,8vw,7.4rem);line-height:.9;letter-spacing:-.055em;font-weight:500;margin:.5rem 0 1.2rem;max-width:900px}
+.hero-deck{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.35rem,2.4vw,2rem);line-height:1.3;max-width:900px;color:#e4d8ce;margin:0 0 1.7rem}
+.hero-copy{max-width:850px;color:#d1c0b6;font-size:1.05rem}
+.jump{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.jump a{text-decoration:none;border:1px solid rgba(215,154,103,.48);padding:8px 11px;font-size:.82rem;font-weight:700;background:rgba(19,12,10,.42)}
+.section{max-width:var(--max);margin:auto;padding:86px 28px}
+.section.alt{background:#1b110e;max-width:none;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section.alt>.inner{max-width:var(--max);margin:auto}
+.section-head{display:grid;grid-template-columns:.88fr 1.12fr;gap:54px;margin-bottom:42px;align-items:end}
+h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.5rem,4.7vw,4.8rem);line-height:.98;letter-spacing:-.038em;font-weight:500;margin:.45rem 0}
+h3{font-family:Georgia,'Times New Roman',serif;font-weight:500}
+.intro{font-size:1.12rem;color:#cbb8ad;max-width:720px}
+.questions{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.question{background:var(--panel);padding:34px;min-height:330px}
+.no{font-family:Georgia,'Times New Roman',serif;font-size:2rem;color:var(--rust)}
+.question h3{font-size:1.8rem;line-height:1.12;margin:.7rem 0 1rem}
+.question p{color:#cdbbb0}
+.examples{font-size:.83rem;color:#d8b89f;border-top:1px solid #56372d;padding-top:14px;margin-top:22px}
+.project{scroll-margin-top:95px;display:grid;grid-template-columns:.72fr 1.28fr;gap:54px;padding:54px 0;border-top:1px solid var(--line)}
+.project:first-of-type{border-top:0;padding-top:0}
+.project h3{font-size:clamp(2rem,3.5vw,3.25rem);line-height:1.02;margin:.45rem 0 1rem}
+.project-question{font-family:Georgia,'Times New Roman',serif;color:#e6c3aa;font-size:1.22rem;line-height:1.35;margin:0}
+.project-copy{color:#cdbbb0}
+.finding{margin-top:20px;padding:18px 20px;border-left:2px solid var(--rust);background:#201410;color:#dfd0c7}
+.finding strong{color:#f2e8df}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.links a{text-decoration:none;border:1px solid #654236;padding:7px 10px;font-size:.82rem;font-weight:700;color:#e9d8cd}
+.links a:hover{border-color:var(--sand);color:var(--sand)}
+.methods{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.method{background:var(--panel);padding:24px;min-height:180px}
+.method h3{font-size:1.18rem;margin:.2rem 0 .8rem}
+.method p{font-size:.9rem;color:#bfa99d;margin:0}
+.directions{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.direction{background:var(--panel);border:1px solid var(--line);padding:26px}
+.direction h3{font-size:1.35rem;margin:.1rem 0 .6rem}
+.direction p{margin:0;color:#c8b5aa}
+.note{margin-top:24px;color:#9f887b;font-size:.9rem}
+.bottom-cta{text-align:center;padding-top:20px}
+.button{display:inline-block;padding:11px 15px;text-decoration:none;border:1px solid #765144;color:#f2e8df;font-weight:800;font-size:.9rem}.button:hover{border-color:var(--sand)}
+.footer{border-top:1px solid #3b241d;background:#100b09}.footer-inner{max-width:var(--max);margin:auto;padding:30px 28px 38px;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;color:#91796d;font-size:.83rem}
+@media(max-width:900px){.section-head,.project{grid-template-columns:1fr}.questions{grid-template-columns:1fr}.methods{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.nav{display:block;padding-top:17px;padding-bottom:17px}.brand{display:block;margin-bottom:10px}.nav-links{gap:13px}.nav-links a{font-size:.82rem}.hero-inner,.section{padding-left:20px;padding-right:20px}.hero h1{font-size:4rem}.section{padding-top:64px;padding-bottom:64px}.methods,.directions{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site-header">
+<nav class="nav">
+<a class="brand" href="index.html">Spatio<span>Sam</span> / Sam Chambers</a>
+<div class="nav-links">
+<a href="index.html#about">About</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="index.html#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="hero-inner">
+<div class="eyebrow">Research</div>
+<h1>Environment, movement, and the spatial production of risk.</h1>
+<p class="hero-deck">A shared set of questions connects my work across border studies, biometeorology, landscape ecology, and spatial science.</p>
+<p class="hero-copy">Although these projects span different substantive areas, they share a common concern with how environmental conditions, infrastructure, and spatial organization alter movement, exposure, accessibility, and survival. I use spatial analysis, environmental and physiological modeling, machine learning, remote sensing, movement analysis, and counter-forensic methods to study these processes across human and ecological systems.</p>
+<div class="jump">
+<a href="#questions">Cross-cutting questions</a>
+<a href="#projects">Selected research</a>
+<a href="#methods">Methods</a>
+<a href="#directions">Research directions</a>
+</div>
+</div>
+</section>
+
+<section class="section" id="questions">
+<div class="section-head">
+<div><div class="eyebrow">Cross-cutting questions</div><h2>Different systems, recurring spatial problems.</h2></div>
+<p class="intro">Rather than separating the work into disciplinary silos, these questions describe the common analytical concerns that run through the research.</p>
+</div>
+<div class="questions">
+<article class="question">
+<div class="no">01</div>
+<h3>How do landscapes shape movement and exposure?</h3>
+<p>Terrain, weather, radiation, vegetation, water availability, and other environmental conditions affect both the feasibility and physiological cost of movement. I examine these relationships across people moving through border landscapes, wildlife navigating fragmented habitat, and populations experiencing extreme heat.</p>
+<div class="examples">Human heat balance · migrant exposure · wildlife energetics · terrain-based movement · urban heat</div>
+</article>
+<article class="question">
+<div class="no">02</div>
+<h3>How does infrastructure reorganize movement and risk?</h3>
+<p>Infrastructure can redirect movement, alter accessibility, fragment landscapes, and redistribute environmental exposure. My work examines these effects in relation to border surveillance and barriers, energy development, transportation systems, land-use change, and heat-response infrastructure.</p>
+<div class="examples">Surveillance · border barriers · energy development · roads · cooling infrastructure</div>
+</article>
+<article class="question">
+<div class="no">03</div>
+<h3>How can spatial evidence reveal processes that are difficult to observe?</h3>
+<p>Many of the processes I study are only partly observed. Movement may be undocumented, mortality records may have uncertain timing, wildlife trajectories are sparsely sampled, and environmental hazards vary continuously through space and time. Spatial methods provide ways to reconstruct and test these processes from incomplete evidence.</p>
+<div class="examples">Spatiotemporal analysis · machine learning · remote sensing · cost distance · counter-forensics</div>
+</article>
+</div>
+</section>
+
+<section class="section alt" id="projects">
+<div class="inner">
+<div class="section-head">
+<div><div class="eyebrow">Selected research</div><h2>Applications of the shared framework.</h2></div>
+<p class="intro">These project areas overlap by design. Each draws on related questions about environmental exposure, movement, infrastructure, and spatial inference.</p>
+</div>
+
+<article class="project" id="biometeorology">
+<div>
+<div class="eyebrow">Biometeorology &amp; climate</div>
+<h3>Thermal Exposure &amp; Human Movement</h3>
+<p class="project-question">How does environmental exposure become physiologically consequential during movement?</p>
+</div>
+<div class="project-copy">
+<p>I develop spatially explicit human heat-balance approaches that incorporate meteorological conditions, radiation, physical exertion, terrain, and exposure duration. This work moves beyond ambient temperature alone to examine the physiological consequences of moving through heterogeneous environments.</p>
+<p>Published applications include heat-related illness and mortality in the Arizona borderlands, thermoregulation during irregular migration, and spatial measures of physiological heat exposure.</p>
+<div class="finding"><strong>Selected finding.</strong> Published work shows that physical exertion and movement context can explain heat-related risk in ways that ambient temperature alone cannot, and that physiologically based spatial models can provide more direct measures of thermal burden.</div>
+<div class="links">
+<a href="https://doi.org/10.1016/j.sste.2023.100590" rel="noopener" target="_blank">Physical exertion &amp; heat mortality ↗</a>
+<a href="https://doi.org/10.1111/geoj.12443" rel="noopener" target="_blank">Thermoregulation &amp; border mortality ↗</a>
+<a href="https://doi.org/10.1016/j.sste.2020.100363" rel="noopener" target="_blank">Geospatial core-temperature modeling ↗</a>
+</div>
+</div>
+</article>
+
+<article class="project" id="borders">
+<div>
+<div class="eyebrow">Borders, mobility &amp; environment</div>
+<h3>Border Surveillance, Displacement &amp; Exposure</h3>
+<p class="project-question">How do enforcement systems alter where people move and the hazards they encounter?</p>
+</div>
+<div class="project-copy">
+<p>My border research examines surveillance, barriers, access restrictions, and enforcement practices as spatial systems that reorganize mobility. Rather than treating environmental hazards as independent of policy, this work considers how enforcement changes route choice, access, exposure, and the geography of mortality and disappearance.</p>
+<p>Related counter-forensic collaborations extend these questions beyond the U.S.–Mexico border to other militarized border landscapes.</p>
+<div class="finding"><strong>Selected finding.</strong> Published studies and investigations show that surveillance, barriers, and restricted access can reshape movement through hazardous landscapes and that apparent remoteness is often produced through infrastructure, policy, and unequal access rather than by distance alone.</div>
+<div class="links">
+<a href="https://doi.org/10.1016/j.polgeo.2025.103332" rel="noopener" target="_blank">The geography of intent ↗</a>
+<a href="https://doi.org/10.1080/24694452.2025.2514034" rel="noopener" target="_blank">Manufacturing Desolation ↗</a>
+<a href="https://doi.org/10.1080/08865655.2019.1570861" rel="noopener" target="_blank">Tertiary funnel effect ↗</a>
+<a href="https://www.borderforensics.org/investigations/poland-investigation/" rel="noopener" target="_blank">The Death Zone ↗</a>
+</div>
+</div>
+</article>
+
+<article class="project" id="landscape">
+<div>
+<div class="eyebrow">Landscape &amp; spatial analytics</div>
+<h3>Wildlife Movement, Energetics &amp; Connectivity</h3>
+<p class="project-question">How do terrain and infrastructure change the energetic cost and connectivity of animal movement?</p>
+</div>
+<div class="project-copy">
+<p>I use GPS data, terrain models, remote sensing, and energetic cost-distance approaches to model wildlife movement through heterogeneous landscapes. This work examines how terrain, infrastructure, energy development, border barriers, and water access influence movement costs and landscape connectivity.</p>
+<p>Species studied include pronghorn, mule deer, jaguar, Texas tortoise, and other terrestrial wildlife.</p>
+<div class="finding"><strong>Selected finding.</strong> Across published studies, infrastructure and land-use change can substantially alter modeled energetic costs and connectivity, while the scale of terrain data and the placement of movement corridors or gaps can strongly influence modeled outcomes.</div>
+<div class="links">
+<a href="https://doi.org/10.1007/s10980-025-02092-2" rel="noopener" target="_blank">Wildlife walking functions ↗</a>
+<a href="https://doi.org/10.1007/s10980-022-01521-w" rel="noopener" target="_blank">Mule deer energetic cost ↗</a>
+<a href="https://doi.org/10.3389/fcosc.2022.1012010" rel="noopener" target="_blank">Jaguar border-wall energetics ↗</a>
+<a href="https://doi.org/10.1111/gcb.70888" rel="noopener" target="_blank">Transboundary access to water ↗</a>
+</div>
+</div>
+</article>
+
+<article class="project" id="urban-climate">
+<div>
+<div class="eyebrow">Climate, health &amp; accessibility</div>
+<h3>Urban Climate, Heat &amp; Access</h3>
+<p class="project-question">How does extreme heat interact with the built environment and uneven access to protective resources?</p>
+</div>
+<div class="project-copy">
+<p>My climate-health research connects meteorological and physiological exposure with urban form, vulnerability, and access to cooling. This includes spatial modeling of human heat exposure and collaborative work on the accessibility and placement of cooling resources.</p>
+<p>The goal is to connect atmospheric and physiological information to public-health and planning questions in ways that are spatially explicit and actionable.</p>
+<div class="finding"><strong>Selected finding.</strong> Published work demonstrates the value of physiologically based heat metrics for public-health analysis and of locally co-produced spatial optimization for identifying gaps in cooling-center access.</div>
+<div class="links">
+<a href="https://doi.org/10.1016/j.rsase.2023.101009" rel="noopener" target="_blank">Urban human heat balance ↗</a>
+<a href="https://doi.org/10.1029/2023CSJ000038" rel="noopener" target="_blank">Cooling-center accessibility ↗</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+
+<section class="section" id="methods">
+<div class="section-head">
+<div><div class="eyebrow">Methods</div><h2>A shared spatial toolkit.</h2></div>
+<p class="intro">Methods vary by problem, but the research repeatedly combines environmental process models with spatial evidence and movement or accessibility analysis.</p>
+</div>
+<div class="methods">
+<div class="method"><h3>Environmental modeling</h3><p>Human heat balance · energetics · meteorological exposure</p></div>
+<div class="method"><h3>Spatial inference</h3><p>Machine learning · spatiotemporal modeling · inference from incomplete observations</p></div>
+<div class="method"><h3>Movement &amp; accessibility</h3><p>Cost distance · connectivity · routing · location-allocation</p></div>
+<div class="method"><h3>Earth observation</h3><p>Remote sensing · terrain analysis · land-cover characterization</p></div>
+<div class="method"><h3>Counter-forensics</h3><p>Spatial reconstruction · mortality and disappearance analysis · infrastructure analysis</p></div>
+</div>
+</section>
+
+<section class="section alt" id="directions">
+<div class="inner">
+<div class="section-head">
+<div><div class="eyebrow">Research directions</div><h2>Where the program is heading.</h2></div>
+<p class="intro">Ongoing work extends these themes while methodological details, hypotheses, datasets, and preliminary results remain reserved for formal scholarly dissemination.</p>
+</div>
+<div class="directions">
+<div class="direction"><h3>Extreme heat &amp; human survivability</h3><p>Physiologically based approaches to understanding exposure under contemporary and changing climate conditions.</p></div>
+<div class="direction"><h3>Mobility &amp; environmental exposure in border landscapes</h3><p>Spatial analysis of how environmental conditions and infrastructure shape movement and risk.</p></div>
+<div class="direction"><h3>Climate, health &amp; urban accessibility</h3><p>Research connecting extreme weather, vulnerability, and access to protective resources.</p></div>
+<div class="direction"><h3>Spatial methods for incomplete environmental and mobility data</h3><p>Development and application of computational approaches for studying processes that are difficult to observe directly.</p></div>
+</div>
+<p class="note">Specific details of ongoing studies are added as projects reach public presentation, preprint, report, or publication stages.</p>
+<div class="bottom-cta"><a class="button" href="publications.html">View publications →</a></div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="footer-inner">
+<span>© 2026 Sam Chambers · SpatioSam</span>
+<span>Environmental Geography · Biometeorology · Spatial Science</span>
+</div>
+</footer>
+</body>
+</html>
